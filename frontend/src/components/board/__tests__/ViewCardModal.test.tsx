@@ -15,6 +15,7 @@ const mockCard: Card = {
   title: "Test Card",
   description: "Test Description",
   order: 0,
+  list_id: "list1",
   labels: ["green", "yellow"],
   due_date: undefined,
   checklist: [
@@ -22,6 +23,8 @@ const mockCard: Card = {
     { id: "2", text: "Task 2", completed: false },
     { id: "3", text: "Task 3", completed: true },
   ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
 };
 
 describe("ViewCardModal", () => {
