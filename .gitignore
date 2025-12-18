@@ -1,0 +1,57 @@
+# Root .gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.staging
+.env.production
+
+# Docker
+docker-compose.override.yml
+
+# Database volumes
+data/
+backups/
+
+# SSL certificates
+ssl/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Documentation build
+docs/_build/
+site/
+
+# Coverage reports
+coverage/
+.coverage
+htmlcov/
+
+# CI/CD secrets
+secrets/
