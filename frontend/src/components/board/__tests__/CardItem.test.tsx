@@ -27,12 +27,15 @@ const mockCard: Card = {
   title: "Test Card",
   description: "Test Description",
   order: 0,
+  list_id: "list1",
   labels: ["red", "blue"],
   due_date: undefined,
   checklist: [
     { id: "1", text: "Task 1", completed: false },
     { id: "2", text: "Task 2", completed: true },
   ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
 };
 
 describe("CardItem", () => {
