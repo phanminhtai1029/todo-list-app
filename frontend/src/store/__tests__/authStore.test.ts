@@ -38,7 +38,13 @@ describe("AuthStore", () => {
   it("should logout and clear state", () => {
     // Set authenticated state
     useAuthStore.setState({
-      user: { id: "1", email: "test@example.com", username: "testuser" },
+      user: { 
+        id: "1", 
+        email: "test@example.com", 
+        username: "testuser",
+        is_active: true,
+        created_at: new Date().toISOString()
+      },
       accessToken: "token",
       refreshToken: "refresh",
       isAuthenticated: true,
