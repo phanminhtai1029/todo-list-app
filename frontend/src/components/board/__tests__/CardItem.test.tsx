@@ -26,8 +26,7 @@ const mockCard: Card = {
   id: "1",
   title: "Test Card",
   description: "Test Description",
-  list_id: "list1",
-  position: 0,
+  order: 0,
   labels: ["red", "blue"],
   due_date: undefined,
   checklist: [
